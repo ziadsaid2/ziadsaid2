@@ -1,17 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 380" width="1280" height="380" role="img" aria-label="Ziad Said — Full Stack Developer">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 440" width="1280" height="440" role="img" aria-label="Ziad Said — Full Stack Developer">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#ede7d5"/>
       <stop offset="50%" stop-color="#ebe5d3"/>
-      <stop offset="100%" stop-color="#e7e0cc"/>
+      <stop offset="100%" stop-color="#e6decb"/>
     </linearGradient>
     <radialGradient id="glow1" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#c2723f" stop-opacity="0.20"/>
+      <stop offset="0%" stop-color="#c2723f" stop-opacity="0.22"/>
       <stop offset="100%" stop-color="#c2723f" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="glow2" cx="50%" cy="50%" r="50%">
       <stop offset="0%" stop-color="#a26461" stop-opacity="0.18"/>
       <stop offset="100%" stop-color="#a26461" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow3" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#d3b76b" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#d3b76b" stop-opacity="0"/>
     </radialGradient>
     <linearGradient id="sweepline" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%" stop-color="#c2723f" stop-opacity="0"/>
@@ -24,52 +28,79 @@
       <stop offset="80%" stop-color="#a26461" stop-opacity="1"/>
       <stop offset="100%" stop-color="#a26461" stop-opacity="0"/>
     </linearGradient>
+    <linearGradient id="dividerfade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#c2723f" stop-opacity="0"/>
+      <stop offset="20%" stop-color="#c2723f" stop-opacity="0.55"/>
+      <stop offset="80%" stop-color="#a26461" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#a26461" stop-opacity="0"/>
+    </linearGradient>
     <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
-      <path d="M 48 0 L 0 0 0 48" fill="none" stroke="#c2723f" stroke-width="0.5" opacity="0.18"/>
+      <path d="M 48 0 L 0 0 0 48" fill="none" stroke="#c2723f" stroke-width="0.5" opacity="0.16"/>
+    </pattern>
+    <pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="0.6" fill="#c2723f" opacity="0.22"/>
     </pattern>
     <mask id="gridmask">
-      <radialGradient id="gridfade" cx="50%" cy="50%" r="55%">
+      <radialGradient id="gridfade" cx="50%" cy="50%" r="60%">
         <stop offset="0%" stop-color="white" stop-opacity="1"/>
         <stop offset="100%" stop-color="white" stop-opacity="0"/>
       </radialGradient>
-      <rect width="1280" height="380" fill="url(#gridfade)"/>
+      <rect width="1280" height="440" fill="url(#gridfade)"/>
     </mask>
     <style><![CDATA[
       .name-fill {
-        font: 700 132px Georgia, "Times New Roman", ui-serif, serif;
-        fill: #3a2a1f;
-        letter-spacing: -4px;
+        font: 400 168px Impact, "Arial Narrow Bold", "Helvetica Neue Condensed", "Bebas Neue", sans-serif;
+        fill: #2d1f15;
+        letter-spacing: 1px;
       }
       .name-outline {
-        font: 700 132px Georgia, "Times New Roman", ui-serif, serif;
+        font: 400 168px Impact, "Arial Narrow Bold", "Helvetica Neue Condensed", "Bebas Neue", sans-serif;
         fill: none;
-        stroke: #3a2a1f;
+        stroke: #2d1f15;
         stroke-width: 1.5;
-        stroke-opacity: 0.45;
-        letter-spacing: -4px;
+        stroke-opacity: 0.42;
+        letter-spacing: 1px;
+      }
+      .role-fill {
+        font: 400 56px Impact, "Arial Narrow Bold", "Helvetica Neue Condensed", "Bebas Neue", sans-serif;
+        fill: #2d1f15;
+        letter-spacing: 1px;
+      }
+      .role-outline {
+        font: 400 56px Impact, "Arial Narrow Bold", "Helvetica Neue Condensed", "Bebas Neue", sans-serif;
+        fill: none;
+        stroke: #2d1f15;
+        stroke-width: 1;
+        stroke-opacity: 0.42;
+        letter-spacing: 1px;
       }
       .greeting {
-        font: 700 13px ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+        font: 700 12px ui-monospace, "SF Mono", Menlo, Consolas, monospace;
         fill: #c2723f;
-        letter-spacing: 4.5px;
-        text-transform: uppercase;
-      }
-      .role {
-        font: 500 18px ui-monospace, "SF Mono", Menlo, Consolas, monospace;
-        fill: #3a2a1f;
         letter-spacing: 5px;
         text-transform: uppercase;
       }
-      .role-mute { fill: #8a7a6b; }
       .meta {
-        font: 400 11px ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+        font: 500 11px ui-monospace, "SF Mono", Menlo, Consolas, monospace;
         fill: #8a7a6b;
-        letter-spacing: 2.4px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+      }
+      .meta-accent {
+        font: 600 11px ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+        fill: #c2723f;
+        letter-spacing: 3px;
         text-transform: uppercase;
       }
       .status {
         font: 600 12px ui-monospace, "SF Mono", Menlo, Consolas, monospace;
-        letter-spacing: 1.4px;
+        letter-spacing: 1.6px;
+        text-transform: uppercase;
+      }
+      .sig {
+        font: 400 14px Georgia, "Times New Roman", serif;
+        font-style: italic;
+        fill: #8a7a6b;
       }
       .sweep { animation: sweep 8s ease-in-out infinite; }
       @keyframes sweep {
@@ -80,14 +111,12 @@
       }
       .blink { animation: blink 1.1s steps(1) infinite; }
       @keyframes blink { 50% { opacity: 0; } }
-      .ping {
-        transform-origin: 1110px 60px;
-        animation: ping 2.4s ease-out infinite;
-      }
+      .ping { animation: ping 2.4s ease-out infinite; }
       @keyframes ping {
         0% { r: 4; opacity: 0.5; }
-        100% { r: 18; opacity: 0; }
+        100% { r: 22; opacity: 0; }
       }
+      .ping-2 { animation: ping 2.4s ease-out -1.2s infinite; }
       .live { animation: livedot 2s ease-in-out infinite; }
       @keyframes livedot {
         0%, 100% { opacity: 1; }
@@ -95,68 +124,111 @@
       }
       .float-1 { animation: float 7s ease-in-out infinite; }
       .float-2 { animation: float 9s ease-in-out -2s infinite; }
+      .float-3 { animation: float 11s ease-in-out -4s infinite; }
       @keyframes float {
         0%, 100% { transform: translateY(0); }
-        50% { transform: translateY(-8px); }
+        50% { transform: translateY(-10px); }
       }
-      .rot { transform-origin: 1110px 180px; animation: rot 32s linear infinite; }
-      @keyframes rot { to { transform: rotate(360deg); } }
+      .rot-cw  { transform-origin: 1110px 220px; animation: rotcw 36s linear infinite; }
+      .rot-ccw { transform-origin: 1110px 220px; animation: rotccw 48s linear infinite; }
+      @keyframes rotcw  { to { transform: rotate(360deg); } }
+      @keyframes rotccw { to { transform: rotate(-360deg); } }
+      .hud-line { animation: hud 4s ease-in-out infinite; }
+      @keyframes hud {
+        0%, 100% { opacity: 0.3; }
+        50% { opacity: 0.8; }
+      }
     ]]></style>
   </defs>
 
-  <rect width="1280" height="380" fill="url(#bg)"/>
-  <ellipse cx="180" cy="120" rx="380" ry="220" fill="url(#glow1)"/>
-  <ellipse cx="1100" cy="280" rx="320" ry="200" fill="url(#glow2)"/>
+  <rect width="1280" height="440" fill="url(#bg)"/>
+  <ellipse cx="180" cy="160" rx="420" ry="260" fill="url(#glow1)"/>
+  <ellipse cx="1100" cy="320" rx="360" ry="240" fill="url(#glow2)"/>
+  <ellipse cx="640" cy="220" rx="500" ry="160" fill="url(#glow3)"/>
 
   <g mask="url(#gridmask)">
-    <rect width="1280" height="380" fill="url(#grid)"/>
+    <rect width="1280" height="440" fill="url(#grid)"/>
   </g>
 
-  <g stroke="#c2723f" stroke-width="1.5" fill="none" opacity="0.55">
-    <path d="M 32 32 L 32 64 M 32 32 L 64 32"/>
-    <path d="M 1248 32 L 1248 64 M 1248 32 L 1216 32"/>
-    <path d="M 32 348 L 32 316 M 32 348 L 64 348"/>
-    <path d="M 1248 348 L 1248 316 M 1248 348 L 1216 348"/>
+  <g opacity="0.6">
+    <rect x="900" y="60" width="320" height="120" fill="url(#dots)" mask="url(#gridmask)"/>
   </g>
 
-  <g class="rot" opacity="0.4">
-    <circle cx="1110" cy="180" r="120" fill="none" stroke="#c9bda3" stroke-width="1"/>
+  <g stroke="#c2723f" stroke-width="1.5" fill="none" opacity="0.6">
+    <path d="M 32 32 L 32 72 M 32 32 L 72 32"/>
+    <path d="M 1248 32 L 1248 72 M 1248 32 L 1208 32"/>
+    <path d="M 32 408 L 32 368 M 32 408 L 72 408"/>
+    <path d="M 1248 408 L 1248 368 M 1248 408 L 1208 408"/>
+  </g>
+
+  <g class="rot-cw" opacity="0.4">
+    <circle cx="1110" cy="220" r="160" fill="none" stroke="#c9bda3" stroke-width="1"/>
     <circle cx="1110" cy="60" r="4" fill="#c2723f"/>
     <circle class="ping" cx="1110" cy="60" r="4" fill="#c2723f"/>
   </g>
-  <circle cx="1110" cy="180" r="80" fill="none" stroke="#d4c9b0" stroke-width="1"/>
-  <circle cx="1110" cy="180" r="40" fill="none" stroke="#d4c9b0" stroke-width="1" stroke-dasharray="3 5"/>
+  <g class="rot-ccw" opacity="0.35">
+    <circle cx="1110" cy="220" r="110" fill="none" stroke="#c9bda3" stroke-width="1" stroke-dasharray="4 6"/>
+    <circle cx="1110" cy="110" r="3" fill="#a26461"/>
+    <circle class="ping-2" cx="1110" cy="110" r="3" fill="#a26461"/>
+  </g>
+  <circle cx="1110" cy="220" r="60" fill="none" stroke="#d4c9b0" stroke-width="1"/>
+  <circle cx="1110" cy="220" r="30" fill="none" stroke="#d4c9b0" stroke-width="1"/>
+  <circle cx="1110" cy="220" r="2" fill="#c2723f" opacity="0.8"/>
+
+  <g opacity="0.55" class="hud-line">
+    <line x1="940" y1="220" x2="956" y2="220" stroke="#c2723f" stroke-width="1"/>
+    <line x1="1264" y1="220" x2="1280" y2="220" stroke="#c2723f" stroke-width="1"/>
+    <line x1="1110" y1="40" x2="1110" y2="56" stroke="#c2723f" stroke-width="1"/>
+    <line x1="1110" y1="384" x2="1110" y2="400" stroke="#c2723f" stroke-width="1"/>
+  </g>
+
   <g class="float-2" opacity="0.55">
-    <rect x="1180" y="295" width="6" height="6" fill="#c2723f"/>
+    <rect x="1190" y="380" width="6" height="6" fill="#c2723f"/>
   </g>
   <g class="float-1" opacity="0.55">
-    <circle cx="980" cy="80" r="2.5" fill="#a26461"/>
+    <circle cx="970" cy="80" r="2.5" fill="#a26461"/>
+  </g>
+  <g class="float-3" opacity="0.45">
+    <rect x="900" y="380" width="3" height="3" fill="#d3b76b"/>
   </g>
 
-  <g transform="translate(70, 76)">
-    <rect x="0" y="-5" width="20" height="2" fill="#c2723f"/>
-    <text x="32" y="0" class="greeting">HI, I AM</text>
+  <g transform="translate(70, 80)">
+    <rect x="0" y="-5" width="22" height="2" fill="#c2723f"/>
+    <text x="34" y="0" class="greeting">HI, I AM</text>
   </g>
 
-  <text x="64" y="200" class="name-fill">ZIAD</text>
-  <text x="270" y="260" class="name-outline">SAID<tspan fill="#c2723f" stroke="none">.</tspan></text>
-
-  <g transform="translate(70, 308)">
-    <rect x="0" y="-12" width="3" height="16" fill="url(#accentbar)"/>
-    <text x="16" y="0" class="role">FULL STACK<tspan class="role-mute"> · </tspan>DEVELOPER</text>
+  <g transform="translate(1248, 80)" text-anchor="end">
+    <text x="0" y="0" class="meta">PORTFOLIO</text>
+    <text x="-90" y="0" class="meta" fill="#c9bda3">·</text>
+    <text x="-104" y="0" class="meta-accent" text-anchor="end">V2026</text>
   </g>
 
-  <g transform="translate(70, 344)">
+  <rect x="60" y="118" width="3" height="200" fill="url(#accentbar)" rx="1.5"/>
+
+  <text x="80" y="240" class="name-fill">ZIAD</text>
+  <text x="190" y="320" class="name-outline">SAID</text>
+  <text x="500" y="320" class="name-fill" fill="#c2723f">.</text>
+
+  <text x="82" y="352" class="sig">— building things that don&apos;t fall over.</text>
+
+  <rect x="60" y="378" width="1160" height="1" fill="url(#dividerfade)"/>
+
+  <g transform="translate(70, 410)">
     <circle cx="5" cy="-4" r="4" fill="#1a7f37" class="live"/>
     <text x="20" y="0" class="status" fill="#8a7a6b">CURRENTLY @</text>
     <text x="142" y="0" class="status" fill="#c2723f">FLOVOO</text>
-    <text x="220" y="0" class="status" fill="#c9bda3">·</text>
-    <text x="240" y="0" class="status" fill="#8a7a6b">EGYPT / REMOTE</text>
+    <text x="220" y="0" class="status" fill="#c9bda3">/</text>
+    <text x="234" y="0" class="status" fill="#8a7a6b">EGYPT</text>
+    <text x="295" y="0" class="status" fill="#c9bda3">/</text>
+    <text x="309" y="0" class="status" fill="#8a7a6b">REMOTE</text>
     <rect x="385" y="-12" width="9" height="14" fill="#c2723f" class="blink"/>
   </g>
 
-  <text x="1248" y="80" class="meta" text-anchor="end">PORTFOLIO · V2026</text>
+  <g text-anchor="end">
+    <text x="1230" y="340" class="role-fill">FULL STACK</text>
+    <text x="1230" y="395" class="role-outline">DEVELOPER</text>
+  </g>
 
   <rect x="0" y="0" width="300" height="1" fill="url(#sweepline)" class="sweep"/>
-  <line x1="0" y1="379" x2="1280" y2="379" stroke="#d4c9b0"/>
+  <line x1="0" y1="439" x2="1280" y2="439" stroke="#d4c9b0"/>
 </svg>
