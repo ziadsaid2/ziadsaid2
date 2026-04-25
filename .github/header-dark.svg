@@ -1,33 +1,119 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 280" width="1280" height="280" role="img" aria-label="Ziad Said — Full Stack Developer">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 320" width="1280" height="320" role="img" aria-label="Ziad Said — Full Stack Developer">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0d1117"></stop>
-      <stop offset="100%" stop-color="#161b22"></stop>
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#161b22"/>
     </linearGradient>
-    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#58a6ff" stop-opacity="0"></stop>
-      <stop offset="50%" stop-color="#58a6ff" stop-opacity="1"></stop>
-      <stop offset="100%" stop-color="#58a6ff" stop-opacity="0"></stop>
+    <linearGradient id="sweepline" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#58a6ff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#58a6ff" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#58a6ff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="accentbar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#58a6ff"/>
+      <stop offset="100%" stop-color="#3fb950"/>
     </linearGradient>
     <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#21262d" stroke-width="1"></path>
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#21262d" stroke-width="1"/>
     </pattern>
-    
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#58a6ff" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#58a6ff" stop-opacity="0"/>
+    </radialGradient>
+    <style><![CDATA[
+      .name {
+        font: 600 88px Georgia, "Times New Roman", ui-serif, serif;
+        fill: #e6edf3;
+        letter-spacing: -2px;
+      }
+      .tag {
+        font: 500 14px ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+        fill: #8d96a0;
+        letter-spacing: 2.6px;
+        text-transform: uppercase;
+      }
+      .status {
+        font: 500 13px ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+        letter-spacing: 1px;
+      }
+      .meta {
+        font: 400 12px ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+        fill: #6e7681;
+        letter-spacing: 1.8px;
+        text-transform: uppercase;
+      }
+      .sweep {
+        animation: sweep 7s ease-in-out infinite;
+      }
+      @keyframes sweep {
+        0%, 100% { transform: translateX(-300px); opacity: 0; }
+        15% { opacity: 1; }
+        85% { opacity: 1; }
+        100% { transform: translateX(1300px); opacity: 0; }
+      }
+      .blink { animation: blink 1.1s steps(1) infinite; }
+      @keyframes blink { 50% { opacity: 0; } }
+      .pulse {
+        transform-origin: 1112px 60px;
+        animation: pulse 2.4s ease-out infinite;
+      }
+      @keyframes pulse {
+        0% { r: 3; opacity: 1; }
+        100% { r: 12; opacity: 0; }
+      }
+      .ring { transform-origin: 1110px 160px; animation: spin 28s linear infinite; }
+      @keyframes spin { to { transform: rotate(360deg); } }
+      .float-1 { animation: float 7s ease-in-out infinite; transform-origin: center; }
+      .float-2 { animation: float 9s ease-in-out -2s infinite; transform-origin: center; }
+      @keyframes float {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-10px); }
+      }
+      .live { animation: livedot 2s ease-in-out infinite; }
+      @keyframes livedot {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.4; }
+      }
+    ]]></style>
   </defs>
-  <rect width="1280" height="280" fill="url(#bg)"></rect>
-  <rect width="1280" height="280" fill="url(#grid)" opacity="0.5"></rect>
-  <g class="ring" opacity="0.35">
-    <circle cx="1110" cy="140" r="78" fill="none" stroke="#30363d" stroke-width="1"></circle>
-    <circle cx="1110" cy="62" r="2.5" class="accent"></circle>
+
+  <rect width="1280" height="320" fill="url(#bg)"/>
+  <rect width="1280" height="320" fill="url(#grid)" opacity="0.5"/>
+  <ellipse cx="200" cy="160" rx="320" ry="200" fill="url(#glow)"/>
+
+  <g class="float-1" opacity="0.7">
+    <circle cx="1080" cy="80" r="3" fill="#3fb950"/>
   </g>
-  <rect x="60" y="80" width="3" height="120" fill="#58a6ff"></rect>
-  <text x="84" y="148" class="name">Ziad Said<tspan fill="#58a6ff">.</tspan></text>
-  <text x="84" y="184" class="tag">Full Stack Developer · Egypt / Remote</text>
-  <g transform="translate(84, 220)">
-    <text class="tag" fill="#3fb950">&gt;</text>
-    <text x="22" class="tag" fill="#8d96a0">currently @ flovoo</text>
-    <rect x="232" y="-12" width="9" height="14" fill="#58a6ff" class="blink"></rect>
+  <g class="float-2" opacity="0.55">
+    <rect x="1180" y="240" width="6" height="6" fill="#58a6ff"/>
   </g>
-  <rect x="0" y="0" width="300" height="1" fill="url(#line)" class="sweep"></rect>
-  <line x1="0" y1="279" x2="1280" y2="279" stroke="#30363d"></line>
+  <g class="float-1" opacity="0.4">
+    <rect x="980" y="260" width="4" height="4" fill="#8d96a0"/>
+  </g>
+
+  <g class="ring" opacity="0.4">
+    <circle cx="1110" cy="160" r="100" fill="none" stroke="#30363d" stroke-width="1"/>
+    <circle cx="1110" cy="60" r="3" fill="#58a6ff"/>
+    <circle class="pulse" cx="1110" cy="60" r="3" fill="#58a6ff" opacity="0.6"/>
+  </g>
+  <circle cx="1110" cy="160" r="60" fill="none" stroke="#21262d" stroke-width="1"/>
+  <circle cx="1110" cy="160" r="30" fill="none" stroke="#21262d" stroke-width="1" stroke-dasharray="2 4"/>
+
+  <text x="84" y="86" class="meta">portfolio · v2026</text>
+
+  <rect x="60" y="110" width="4" height="140" fill="url(#accentbar)" rx="2"/>
+
+  <text x="84" y="180" class="name">Ziad Said<tspan fill="#58a6ff">.</tspan></text>
+  <text x="84" y="216" class="tag">Full Stack Developer · Egypt / Remote</text>
+
+  <g transform="translate(84, 256)">
+    <circle cx="6" cy="-4" r="4" fill="#3fb950" class="live"/>
+    <text x="20" y="0" class="status" fill="#8d96a0">currently @ flovoo</text>
+    <rect x="190" y="-12" width="9" height="14" fill="#58a6ff" class="blink"/>
+  </g>
+
+  <text x="84" y="296" class="meta">debugging · shipping · making things make sense</text>
+
+  <rect x="0" y="0" width="300" height="1" fill="url(#sweepline)" class="sweep"/>
+  <line x1="0" y1="319" x2="1280" y2="319" stroke="#30363d"/>
 </svg>
