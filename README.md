@@ -12,7 +12,6 @@
   <a href="mailto:ziadsaidahmed2005@gmail.com"><img src="https://img.shields.io/badge/EMAIL-ziadsaidahmed2005-c2723f?style=flat-square&logo=gmail&logoColor=ebe5d3&labelColor=2a1d12" /></a>
   <a href="https://www.linkedin.com/in/ziadsaid/"><img src="https://img.shields.io/badge/LINKEDIN-ziadsaid-c2723f?style=flat-square&logo=linkedin&logoColor=ebe5d3&labelColor=2a1d12" /></a>
   <a href="https://wa.me/201010695751"><img src="https://img.shields.io/badge/WHATSAPP-chat-1a7f37?style=flat-square&logo=whatsapp&logoColor=ebe5d3&labelColor=2a1d12" /></a>
-  <img src="https://img.shields.io/badge/STATUS-open_to_work-1a7f37?style=flat-square&labelColor=2a1d12" />
 </p>
 
 <p align="center"><sub><kbd>📍 Egypt / Remote</kbd> &nbsp; <kbd>⏵ Currently @ Flovoo</kbd> &nbsp; <kbd>✦ Building with intent</kbd></sub></p>
