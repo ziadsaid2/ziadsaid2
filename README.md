@@ -1,12 +1,7 @@
 <!-- ────────────────────────────────────────────────────────────
      Animated header — switches with GitHub theme
      ──────────────────────────────────────────────────────────── -->
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ziadsaid2/ziadsaid2/main/.github/header-dark.svg" />
-    <img alt="Ziad Said — Full Stack Developer" src="https://raw.githubusercontent.com/ziadsaid2/ziadsaid2/main/.github/header.svg" width="100%" />
-  </picture>
-</p>
+
 
 <p align="center">
   <a href="mailto:ziadsaidahmed2005@gmail.com"><img src="https://img.shields.io/badge/EMAIL-ziadsaidahmed2005-c2723f?style=flat-square&logo=gmail&logoColor=ebe5d3&labelColor=2a1d12" /></a>
