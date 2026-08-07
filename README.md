@@ -139,8 +139,8 @@ Interactive portfolio with a working terminal — eight commands, a boot screen,
 </td>
 <td width="33%" valign="top">
 
-#### [mohamed-shop](https://github.com/ziadsaid2/mohamed-shop)
-Storefront for a car-parts and car-wash business — catalogue, services, search, admin area, and SEO done properly.
+#### [mohamed-shop](https://github.com/ziadsaid2/mohamed-shop) &nbsp;·&nbsp; [live ↗](https://mohamed-shop.ziadsaid.workers.dev)
+Arabic RTL storefront for a car-wash equipment supplier — catalogue, service pages, search, admin area, SEO.
 
 <sub>
 <img src="https://img.shields.io/badge/Next.js-000?style=flat-square&logo=next.js&logoColor=white&labelColor=2a1d12" />
